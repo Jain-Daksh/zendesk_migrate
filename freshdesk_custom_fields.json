@@ -1,0 +1,102 @@
+[
+  {
+    "name": "cf_order_id",
+    "type": "custom_number"
+  },
+  {
+    "name": "cf_severity",
+    "type": "custom_dropdown"
+  },
+  {
+    "name": "cf_disposition_l1845173",
+    "type": "nested_field"
+  },
+  {
+    "name": "cf_product_name",
+    "type": "custom_text"
+  },
+  {
+    "name": "cf_product_category796083",
+    "type": "custom_text"
+  },
+  {
+    "name": "cf_product_subcategory",
+    "type": "custom_text"
+  },
+  {
+    "name": "cf_followup_date",
+    "type": "custom_date"
+  },
+  {
+    "name": "cf_pending_on",
+    "type": "custom_text"
+  },
+  {
+    "name": "status",
+    "type": "default_status"
+  },
+  {
+    "name": "cf_ticket_owner",
+    "type": "custom_text"
+  },
+  {
+    "name": "cf_customer_email",
+    "type": "custom_text"
+  },
+  {
+    "name": "cf_customer_number",
+    "type": "custom_number"
+  },
+  {
+    "name": "cf_material_code",
+    "type": "custom_text"
+  },
+  {
+    "name": "requester",
+    "type": "default_requester"
+  },
+  {
+    "name": "subject",
+    "type": "default_subject"
+  },
+  {
+    "name": "ticket_type",
+    "type": "default_ticket_type"
+  },
+  {
+    "name": "cf_issue_type",
+    "type": "custom_dropdown"
+  },
+  {
+    "name": "source",
+    "type": "default_source"
+  },
+  {
+    "name": "agent",
+    "type": "default_agent"
+  },
+  {
+    "name": "product",
+    "type": "default_product"
+  },
+  {
+    "name": "description",
+    "type": "default_description"
+  },
+  {
+    "name": "company",
+    "type": "default_company"
+  },
+  {
+    "name": "priority",
+    "type": "default_priority"
+  },
+  {
+    "name": "cf_product_owner",
+    "type": "custom_text"
+  },
+  {
+    "name": "group",
+    "type": "default_group"
+  }
+]

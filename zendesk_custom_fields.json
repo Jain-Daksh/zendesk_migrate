@@ -1,0 +1,267 @@
+[
+  {
+    "title": "Subject",
+    "type": "subject",
+    "infreshdesk": "t"
+  },
+  {
+    "title": "Description",
+    "type": "description",
+    "infreshdesk": "t"
+  },
+  {
+    "title": "Type",
+    "type": "tickettype",
+    "infreshdesk": "t"
+    
+  },
+  {
+    "title": "Priority",
+    "type": "basic_priority",
+    "infreshdesk": "t"
+
+  },
+  {
+    "title": "Group",
+    "type": "group",
+    "infreshdesk": "t"
+
+  },
+  {
+    "title": "Assignee",
+    "type": "assignee"
+  },
+  {
+    "title": "Ticket status",
+    "type": "custom_status",
+    "infreshdesk": "t"
+  },
+  {
+    "title": "Order ID",
+    "type": "integer",
+    "infreshdesk": "t"
+  },
+  {
+    "title": "Issue types",
+    "type": "tagger",
+    "infreshdesk": "t"
+    
+  },
+  {
+    "title": "Sub issue types",
+    "type": "tagger",
+    "infreshdesk": "t"
+
+  },
+  {
+    "title": "Solution Provided",
+    "type": "tagger"
+  },
+  {
+    "title": "Call Done ?",
+    "type": "tagger"
+  },
+  {
+    "title": "Department",
+    "type": "tagger"
+  },
+  {
+    "title": "Call Disposition",
+    "type": "tagger"
+  },
+  {
+    "title": "Escalate to level2",
+    "type": "checkbox"
+  },
+  {
+    "title": "Top Escalation",
+    "type": "checkbox"
+  },
+  {
+    "title": "Social Media",
+    "type": "tagger"
+  },
+  {
+    "title": "Store Location",
+    "type": "tagger"
+  },
+  {
+    "title": "Escalation Source",
+    "type": "tagger"
+  },
+  {
+    "title": "Severity",
+    "type": "tagger",
+    "infreshdesk": "t"
+
+  },
+  {
+    "title": "Set Reminder",
+    "type": "date"
+  },
+  {
+    "title": "Escalate to level3",
+    "type": "checkbox"
+  },
+  {
+    "title": "Order Changes",
+    "type": "text"
+  },
+  {
+    "title": "Select Fields",
+    "type": "tagger"
+  },
+  {
+    "title": "Message",
+    "type": "text"
+  },
+  {
+    "title": "Pincode",
+    "type": "text"
+  },
+  {
+    "title": "Mobile Number",
+    "type": "text"
+  },
+  {
+    "title": "Order Id",
+    "type": "text"
+  },
+  {
+    "title": "Sub-Issue 1 (Order Cancellation/Refund) TEST",
+    "type": "tagger"
+  },
+  {
+    "title": "Sub-Issue 2 (Invoice Related) TEST",
+    "type": "tagger"
+  },
+  {
+    "title": "Status",
+    "type": "status"
+  },
+  {
+    "title": "Mobile",
+    "type": "integer"
+  },
+  {
+    "title": "Agent_name",
+    "type": "text"
+  },
+  {
+    "title": "Order Id",
+    "type": "integer"
+  },
+  {
+    "title": "Product Name",
+    "type": "text"
+  },
+  {
+    "title": "Support team",
+    "type": "tagger"
+  },
+  {
+    "title": "Estimated Delivery Date",
+    "type": "date"
+  },
+  {
+    "title": "Sub Status",
+    "type": "tagger"
+  },
+  {
+    "title": "WH Name",
+    "type": "tagger"
+  },
+  {
+    "title": "Issue Type",
+    "type": "tagger"
+  },
+  {
+    "title": "Solution",
+    "type": "tagger"
+  },
+  {
+    "title": "Department",
+    "type": "tagger"
+  },
+  {
+    "title": "Third Party Vendor",
+    "type": "checkbox"
+  },
+  {
+    "title": "Duplicate",
+    "type": "checkbox"
+  },
+  {
+    "title": "City",
+    "type": "text"
+  },
+  {
+    "title": "Social Media Review",
+    "type": "tagger"
+  },
+  {
+    "title": "Product Category",
+    "type": "tagger"
+  },
+  {
+    "title": "Approval status",
+    "type": "tagger"
+  },
+  {
+    "title": "Support Comments",
+    "type": "textarea"
+  },
+  {
+    "title": "Delivery Delay",
+    "type": "tagger"
+  },
+  {
+    "title": "Production / Supply Chain Owner",
+    "type": "text"
+  },
+  {
+    "title": "Escalation Date",
+    "type": "date"
+  },
+  {
+    "title": "Product Owner",
+    "type": "tagger"
+  },
+  {
+    "title": "DSAT Date",
+    "type": "date"
+  },
+  {
+    "title": "Customer Comments",
+    "type": "text"
+  },
+  {
+    "title": "CSAT Rating",
+    "type": "text"
+  },
+  {
+    "title": "Root Cause Analysis",
+    "type": "tagger"
+  },
+  {
+    "title": "CSAT Action Taken",
+    "type": "tagger"
+  },
+  {
+    "title": "CSAT Type",
+    "type": "tagger"
+  },
+  {
+    "title": "CSAT Post Connect",
+    "type": "text"
+  },
+  {
+    "title": "Last open date time",
+    "type": "date"
+  },
+  {
+    "title": "Last status date time",
+    "type": "date"
+  }
+]
+
