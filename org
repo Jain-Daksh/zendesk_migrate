@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://wsteamsupport.zendesk.com/api/v2/organizations/18291386767506.json",
+    "id": 18291386767506,
+    "name": "cx is facing some issue with the product cracks on study table",
+    "shared_tickets": false,
+    "shared_comments": false,
+    "external_id": null,
+    "created_at": "2024-04-13T09:46:48Z",
+    "updated_at": "2024-04-13T09:46:48Z",
+    "domain_names": [],
+    "details": "",
+    "notes": "",
+    "group_id": null,
+    "tags": [],
+    "organization_fields": {
+      "order_id": null
+    }
+  },
+  {
+    "url": "https://wsteamsupport.zendesk.com/api/v2/organizations/12498613893394.json",
+    "id": 12498613893394,
+    "name": "wssupport",
+    "shared_tickets": false,
+    "shared_comments": false,
+    "external_id": null,
+    "created_at": "2023-07-14T09:50:45Z",
+    "updated_at": "2025-09-18T11:48:02Z",
+    "domain_names": [],
+    "details": "",
+    "notes": "",
+    "group_id": null,
+    "tags": [],
+    "organization_fields": {
+      "order_id": null
+    }
+  }
+]
