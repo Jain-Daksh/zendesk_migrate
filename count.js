@@ -16,6 +16,58 @@ async function fetchZendeskUserCount() {
     return 0; // Return 0 in case of an error
   }
 }
+// Helper function to throttle requests
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+// Fetch only the count of Zendesk agents with parallel requests
+async function fetchZendeskAgentCount() {
+  let agentCount = 0;
+  let pageUrl = `${ZENDESK_DOMAIN}/users.json?role=agent&per_page=100`; // Limit to 100 per page
+  let allPages = [];
+
+  try {
+    // Loop through all pages of users and count agents
+    while (pageUrl) {
+      allPages.push(
+        axios.get(pageUrl, {
+          auth: { username: `${ZENDESK_EMAIL}/token`, password: ZENDESK_TOKEN },
+        })
+      );
+
+      if (allPages.length >= 10) {
+        // Batch size: 10 concurrent requests at once
+        // Wait for current batch to complete
+        const results = await Promise.all(allPages);
+        allPages = []; // Reset array for next batch
+
+        // Count agents in the batch results
+        results.forEach((res) => {
+          const agentsOnPage = res.data.users.filter(
+            (user) => user.role === 'agent'
+          );
+          agentCount += agentsOnPage.length;
+        });
+
+        // Add a small delay to throttle requests (to avoid hitting rate limits)
+        await delay(1000); // Delay for 1 second after every batch
+      }
+
+      // Update pageUrl to the next page, if available
+      const nextPage = (
+        await axios.get(pageUrl, {
+          auth: { username: `${ZENDESK_EMAIL}/token`, password: ZENDESK_TOKEN },
+        })
+      ).data.next_page;
+
+      pageUrl = nextPage || null;
+    }
+
+    return agentCount; // Return the total count of agents
+  } catch (error) {
+    console.error('Error fetching agents count:', error);
+    return 0; // Return 0 in case of an error
+  }
+}
 
 // Fetch only the count of Zendesk organizations
 async function fetchZendeskOrgCount() {
@@ -57,7 +109,9 @@ async function fetchAndVerify() {
   console.log('⏳ Fetching Zendesk tickets count...');
   const ticketCount = await fetchZendeskTicketCount();
   console.log(`Found ${ticketCount} tickets.`);
-
+  console.log('⏳ Fetching Zendesk agents count...');
+  const agentCount = await fetchZendeskAgentCount();
+  console.log(`Found ${agentCount} agents.`);
   console.log('✅ All done! You can now verify the counts.');
 }
 
