@@ -145,20 +145,10 @@ async function createFreshdeskContact(user, orgMap) {
 // migrateContacts();
 
 async function migrateOneContact() {
-  // Let's pick a user for testing (you can manually select one or pick the first user)
   const user = await fetchZendeskUsers();
-  // const orgs = await fetchZendeskOrganizations();
-  // console.log(`Found ${orgs.length} organizations.`);
-
-  // const orgMap = {};
-  // for (const org of orgs) {
-  //   const companyId = await createFreshdeskCompany(org);
-  //   if (companyId) orgMap[org.id] = companyId;
-  // }
 
   console.log('fetched user', user);
-  const testUser = user; // Picking the first user as an example
-
+  const testUser = user;
   console.log('🧐 Testing with the user: ', testUser);
 
   console.log('🚀 Creating contact in Freshdesk for testing...');
