@@ -137,34 +137,36 @@ async function fetchContactsAndOrganizations() {
 
 fetchContactsAndOrganizations();
 
-
-
-
-
 async function fetchZendeskTickets(pageUrl = `${ZENDESK_DOMAIN}/tickets.json`) {
   const res = await axios.get(pageUrl, {
     auth: { username: `${ZENDESK_EMAIL}/token`, password: ZENDESK_TOKEN },
   });
 
   const tickets = res.data.tickets;
-  const nextPage = res.data.next_page;  // URL for next page, if available
+  const nextPage = res.data.next_page; // URL for next page, if available
   return { tickets, nextPage };
 }
 
 // Fetch comments for a specific ticket
 async function fetchTicketComments(ticketId) {
-  const res = await axios.get(`${ZENDESK_DOMAIN}/tickets/${ticketId}/comments.json`, {
-    auth: { username: `${ZENDESK_EMAIL}/token`, password: ZENDESK_TOKEN },
-  });
+  const res = await axios.get(
+    `${ZENDESK_DOMAIN}/tickets/${ticketId}/comments.json`,
+    {
+      auth: { username: `${ZENDESK_EMAIL}/token`, password: ZENDESK_TOKEN },
+    }
+  );
 
   return res.data.comments;
 }
 
 // Fetch attachments for a specific comment
 async function fetchAttachmentsForComment(ticketId, commentId) {
-  const res = await axios.get(`${ZENDESK_DOMAIN}/tickets/${ticketId}/comments/${commentId}/attachments.json`, {
-    auth: { username: `${ZENDESK_EMAIL}/token`, password: ZENDESK_TOKEN },
-  });
+  const res = await axios.get(
+    `${ZENDESK_DOMAIN}/tickets/${ticketId}/comments/${commentId}/attachments.json`,
+    {
+      auth: { username: `${ZENDESK_EMAIL}/token`, password: ZENDESK_TOKEN },
+    }
+  );
 
   return res.data.attachments;
 }
@@ -172,12 +174,11 @@ async function fetchAttachmentsForComment(ticketId, commentId) {
 // Function to fetch ticket data, including comments and attachments
 async function fetchTicketsWithConversationsAndAttachments() {
   let allTickets = [];
-  
+
   // Fetch page 1 of tickets
-  console.log("⏳ Fetching tickets from page 1...");
-  const { tickets: page1Tickets, nextPage: nextPage1 } = await fetchZendeskTickets(
-    `${ZENDESK_DOMAIN}/tickets.json`
-  );
+  console.log('⏳ Fetching tickets from page 1...');
+  const { tickets: page1Tickets, nextPage: nextPage1 } =
+    await fetchZendeskTickets(`${ZENDESK_DOMAIN}/tickets.json`);
 
   // Get comments and attachments for each ticket
   for (const ticket of page1Tickets) {
@@ -196,8 +197,9 @@ async function fetchTicketsWithConversationsAndAttachments() {
 
   // If there is a next page, fetch page 2 and repeat the process
   if (nextPage1) {
-    console.log("⏳ Fetching tickets from page 2...");
-    const { tickets: page2Tickets, nextPage: nextPage2 } = await fetchZendeskTickets(nextPage1);
+    console.log('⏳ Fetching tickets from page 2...');
+    const { tickets: page2Tickets, nextPage: nextPage2 } =
+      await fetchZendeskTickets(nextPage1);
 
     // Get comments and attachments for page 2 tickets
     for (const ticket of page2Tickets) {
@@ -215,8 +217,38 @@ async function fetchTicketsWithConversationsAndAttachments() {
   }
 
   // Save the tickets data into a JSON file
-  fs.writeFileSync('zendesk_tickets_with_conversations_and_attachments.json', JSON.stringify(allTickets, null, 2));
-  console.log(`✅ Saved ${allTickets.length} tickets with conversations and attachments.`);
+  fs.writeFileSync(
+    'zendesk_tickets_with_conversations_and_attachments.json',
+    JSON.stringify(allTickets, null, 2)
+  );
+  console.log(
+    `✅ Saved ${allTickets.length} tickets with conversations and attachments.`
+  );
 }
 
 fetchTicketsWithConversationsAndAttachments();
+
+async function fetchZendeskAgents() {
+  let agents = [];
+  let pageUrl = `${ZENDESK_DOMAIN}/users.json`;
+  let nextPage;
+
+  do {
+    console.log('⏳ Fetching users...');
+    const { users, nextPage: next } = await fetchZendeskUsers(pageUrl);
+    nextPage = next;
+
+    // Filter agents from the list of users
+    const pageAgents = users.filter((user) => user.role === 'agent');
+    agents = [...agents, ...pageAgents];
+
+    pageUrl = nextPage; // Update the URL for the next page, if any
+  } while (nextPage);
+
+  // Save the agent data into a JSON file
+  fs.writeFileSync('zendesk_agents.json', JSON.stringify(agents, null, 2));
+  console.log(`✅ Saved ${agents.length} agents.`);
+}
+fetchZendeskAgents();
+
+console.log('✅ All done!');
