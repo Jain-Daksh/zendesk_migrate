@@ -29,6 +29,7 @@ async function fetchAllZendeskCustomFields(url) {
     const fieldsSummary = customFields.map((field) => ({
       title: field.title,
       type: field.type,
+      id: field.id,
     }));
 
     // Log the output or save it to a file
@@ -39,7 +40,7 @@ async function fetchAllZendeskCustomFields(url) {
 
     // Optionally, write the result to a file for backup
     fs.writeFileSync(
-      'zendesk_custom_fields.json',
+      'zendesk_custom_fieldswithid.json',
       JSON.stringify(fieldsSummary, null, 2)
     );
 

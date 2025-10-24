@@ -30,13 +30,14 @@ async function fetchFreshdeskCustomFields(url) {
     const fieldsSummary = customFields.map(field => ({
       name: field.name,
       type: field.type,
+      id: field.id
     }));
 
     // Log the output or save it to a file
     console.log('Custom Fields (Name & Type):', JSON.stringify(fieldsSummary, null, 2));
 
     // Optionally, write the result to a file for backup
-    fs.writeFileSync('freshdesk_custom_fields.json', JSON.stringify(fieldsSummary, null, 2));
+    fs.writeFileSync('freshdesk_custom_fieldswithid.json', JSON.stringify(fieldsSummary, null, 2));
 
     return fieldsSummary;
   } catch (err) {
