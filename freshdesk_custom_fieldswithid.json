@@ -1,0 +1,107 @@
+[
+  {
+    "name": "cf_order_id",
+    "type": "custom_number",
+    "id": 1130000209662
+  },
+  {
+    "name": "priority",
+    "type": "default_priority",
+    "id": 1130000201784
+  },
+  {
+    "name": "cf_disposition_l1845173",
+    "type": "nested_field",
+    "id": 1130000222996
+  },
+  {
+    "name": "cf_product_name",
+    "type": "custom_text",
+    "id": 1130000225921
+  },
+  {
+    "name": "status",
+    "type": "default_status",
+    "id": 1130000201783
+  },
+  {
+    "name": "requester",
+    "type": "default_requester",
+    "id": 1130000201779
+  },
+  {
+    "name": "subject",
+    "type": "default_subject",
+    "id": 1130000201780
+  },
+  {
+    "name": "ticket_type",
+    "type": "default_ticket_type",
+    "id": 1130000201781
+  },
+  {
+    "name": "cf_issue_type",
+    "type": "custom_dropdown",
+    "id": 1130000209663
+  },
+  {
+    "name": "cf_solution_provided",
+    "type": "custom_dropdown",
+    "id": 1130000212439
+  },
+  {
+    "name": "source",
+    "type": "default_source",
+    "id": 1130000201782
+  },
+  {
+    "name": "agent",
+    "type": "default_agent",
+    "id": 1130000201786
+  },
+  {
+    "name": "cf_followup_date",
+    "type": "custom_date",
+    "id": 1130000222559
+  },
+  {
+    "name": "cf_pending_on",
+    "type": "custom_text",
+    "id": 1130000222605
+  },
+  {
+    "name": "cf_product_category796083",
+    "type": "custom_text",
+    "id": 1130000225922
+  },
+  {
+    "name": "cf_product_subcategory",
+    "type": "custom_text",
+    "id": 1130000225923
+  },
+  {
+    "name": "cf_material_code",
+    "type": "custom_text",
+    "id": 1130000223112
+  },
+  {
+    "name": "description",
+    "type": "default_description",
+    "id": 1130000201788
+  },
+  {
+    "name": "company",
+    "type": "default_company",
+    "id": 1130000201789
+  },
+  {
+    "name": "group",
+    "type": "default_group",
+    "id": 1130000201785
+  },
+  {
+    "name": "product",
+    "type": "default_product",
+    "id": 1130000201787
+  }
+]

@@ -1,0 +1,312 @@
+[
+  {
+    "title": "Subject",
+    "type": "subject",
+    "id": 12498620005650
+  },
+  {
+    "title": "Description",
+    "type": "description",
+    "id": 12498603856658
+  },
+  {
+    "title": "Type",
+    "type": "tickettype",
+    "id": 12498603860370
+  },
+  {
+    "title": "Priority",
+    "type": "basic_priority",
+    "id": 12498641626514
+  },
+  {
+    "title": "Group",
+    "type": "group",
+    "id": 12498620008594
+  },
+  {
+    "title": "Assignee",
+    "type": "assignee",
+    "id": 12498597250322
+  },
+  {
+    "title": "Ticket status",
+    "type": "custom_status",
+    "id": 12498613752722
+  },
+  {
+    "title": "Order ID",
+    "type": "integer",
+    "id": 12686819265426
+  },
+  {
+    "title": "Issue types",
+    "type": "tagger",
+    "id": 12686879277074
+  },
+  {
+    "title": "Sub issue types",
+    "type": "tagger",
+    "id": 13803217889682
+  },
+  {
+    "title": "Solution Provided",
+    "type": "tagger",
+    "id": 12686841173906
+  },
+  {
+    "title": "Call Done ?",
+    "type": "tagger",
+    "id": 12686781469074
+  },
+  {
+    "title": "Department",
+    "type": "tagger",
+    "id": 12686791446162
+  },
+  {
+    "title": "Call Disposition",
+    "type": "tagger",
+    "id": 12686751531410
+  },
+  {
+    "title": "Escalate to level2",
+    "type": "checkbox",
+    "id": 13559105483794
+  },
+  {
+    "title": "Top Escalation",
+    "type": "checkbox",
+    "id": 23533808269842
+  },
+  {
+    "title": "Social Media",
+    "type": "tagger",
+    "id": 23265659981586
+  },
+  {
+    "title": "Store Location",
+    "type": "tagger",
+    "id": 23265599320338
+  },
+  {
+    "title": "Escalation Source",
+    "type": "tagger",
+    "id": 23265481386770
+  },
+  {
+    "title": "Severity",
+    "type": "tagger",
+    "id": 23237595589650
+  },
+  {
+    "title": "Set Reminder",
+    "type": "date",
+    "id": 19047831723666
+  },
+  {
+    "title": "Escalate to level3",
+    "type": "checkbox",
+    "id": 19047585225618
+  },
+  {
+    "title": "Order Changes",
+    "type": "text",
+    "id": 18918118338834
+  },
+  {
+    "title": "Select Fields",
+    "type": "tagger",
+    "id": 18917817920402
+  },
+  {
+    "title": "Message",
+    "type": "text",
+    "id": 13985595254034
+  },
+  {
+    "title": "Pincode",
+    "type": "text",
+    "id": 13980496573714
+  },
+  {
+    "title": "Mobile Number",
+    "type": "text",
+    "id": 13925506797586
+  },
+  {
+    "title": "Order Id",
+    "type": "text",
+    "id": 13925394241682
+  },
+  {
+    "title": "Sub-Issue 1 (Order Cancellation/Refund) TEST",
+    "type": "tagger",
+    "id": 24272962341650
+  },
+  {
+    "title": "Sub-Issue 2 (Invoice Related) TEST",
+    "type": "tagger",
+    "id": 24272947047314
+  },
+  {
+    "title": "Status",
+    "type": "status",
+    "id": 12498628558610
+  },
+  {
+    "title": "Mobile",
+    "type": "integer",
+    "id": 12686832503058
+  },
+  {
+    "title": "Agent_name",
+    "type": "text",
+    "id": 13563151174162
+  },
+  {
+    "title": "Order Id",
+    "type": "integer",
+    "id": 13925406160402
+  },
+  {
+    "title": "Product Name",
+    "type": "text",
+    "id": 24436124796050
+  },
+  {
+    "title": "Support team",
+    "type": "tagger",
+    "id": 25028629741970
+  },
+  {
+    "title": "Estimated Delivery Date",
+    "type": "date",
+    "id": 25206911165842
+  },
+  {
+    "title": "Sub Status",
+    "type": "tagger",
+    "id": 25261685515026
+  },
+  {
+    "title": "WH Name",
+    "type": "tagger",
+    "id": 25418738293010
+  },
+  {
+    "title": "Issue Type",
+    "type": "tagger",
+    "id": 25592683930130
+  },
+  {
+    "title": "Solution",
+    "type": "tagger",
+    "id": 25594354827666
+  },
+  {
+    "title": "Department",
+    "type": "tagger",
+    "id": 25594425344146
+  },
+  {
+    "title": "Third Party Vendor",
+    "type": "checkbox",
+    "id": 26002568548626
+  },
+  {
+    "title": "Duplicate",
+    "type": "checkbox",
+    "id": 26888092455570
+  },
+  {
+    "title": "City",
+    "type": "text",
+    "id": 27030718581906
+  },
+  {
+    "title": "Social Media Review",
+    "type": "tagger",
+    "id": 27763678120338
+  },
+  {
+    "title": "Product Category",
+    "type": "tagger",
+    "id": 28040892666258
+  },
+  {
+    "title": "Approval status",
+    "type": "tagger",
+    "id": 28128092825874
+  },
+  {
+    "title": "Support Comments",
+    "type": "textarea",
+    "id": 28198224272786
+  },
+  {
+    "title": "Delivery Delay",
+    "type": "tagger",
+    "id": 28212170772498
+  },
+  {
+    "title": "Production / Supply Chain Owner",
+    "type": "text",
+    "id": 28293083464338
+  },
+  {
+    "title": "Escalation Date",
+    "type": "date",
+    "id": 28524783553170
+  },
+  {
+    "title": "Product Owner",
+    "type": "tagger",
+    "id": 29012349718162
+  },
+  {
+    "title": "DSAT Date",
+    "type": "date",
+    "id": 29306541241874
+  },
+  {
+    "title": "Customer Comments",
+    "type": "text",
+    "id": 29306590245138
+  },
+  {
+    "title": "CSAT Rating",
+    "type": "text",
+    "id": 29306596071314
+  },
+  {
+    "title": "Root Cause Analysis",
+    "type": "tagger",
+    "id": 29306737207826
+  },
+  {
+    "title": "CSAT Action Taken",
+    "type": "tagger",
+    "id": 29306900252306
+  },
+  {
+    "title": "CSAT Type",
+    "type": "tagger",
+    "id": 29306964133778
+  },
+  {
+    "title": "CSAT Post Connect",
+    "type": "text",
+    "id": 29358497448466
+  },
+  {
+    "title": "Last open date time",
+    "type": "date",
+    "id": 29945758849938
+  },
+  {
+    "title": "Last status date time",
+    "type": "date",
+    "id": 30033380645778
+  }
+]
