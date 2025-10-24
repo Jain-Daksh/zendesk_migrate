@@ -1,0 +1,721 @@
+{
+  "id": 376820,
+  "subject": "Update on Your Order ID: 995254",
+  "description": "Wrong product The board part is received in a different pattern",
+  "status": "closed",
+  "priority": "normal",
+  "requester_id": 19554153642130,
+  "assignee_id": 12706838227218,
+  "created_at": "2025-03-20T08:49:22Z",
+  "updated_at": "2025-07-31T14:06:54Z",
+  "tags": [
+    "created_by_sales_team",
+    "customer_support",
+    "defective_product_delivered__report_within_72_hours_",
+    "hardware_issues",
+    "production-_product_rmnf",
+    "remanufacture_added",
+    "severity_1",
+    "wrong_product_received"
+  ],
+  "custom_fields": [
+    {
+      "id": 12686819265426,
+      "value": "995254"
+    },
+    {
+      "id": 12686879277074,
+      "value": "Defective Product Delivered (Report Within 72 Hours)"
+    },
+    {
+      "id": 13803217889682,
+      "value": "Hardware Issues"
+    },
+    {
+      "id": 12686841173906,
+      "value": "remanufacture_added"
+    },
+    {
+      "id": 13559105483794,
+      "value": false
+    },
+    {
+      "id": 23533808269842,
+      "value": false
+    },
+    {
+      "id": 23265659981586,
+      "value": null
+    },
+    {
+      "id": 23265599320338,
+      "value": null
+    },
+    {
+      "id": 23265481386770,
+      "value": null
+    },
+    {
+      "id": 23237595589650,
+      "value": "severity_1"
+    },
+    {
+      "id": 19047831723666,
+      "value": null
+    },
+    {
+      "id": 19047585225618,
+      "value": false
+    },
+    {
+      "id": 18918118338834,
+      "value": null
+    },
+    {
+      "id": 18917817920402,
+      "value": null
+    },
+    {
+      "id": 13985595254034,
+      "value": null
+    },
+    {
+      "id": 13980496573714,
+      "value": null
+    },
+    {
+      "id": 13925506797586,
+      "value": null
+    },
+    {
+      "id": 13925394241682,
+      "value": null
+    },
+    {
+      "id": 24272962341650,
+      "value": null
+    },
+    {
+      "id": 24272947047314,
+      "value": null
+    },
+    {
+      "id": 13925406160402,
+      "value": null
+    },
+    {
+      "id": 24436124796050,
+      "value": null
+    },
+    {
+      "id": 25028629741970,
+      "value": null
+    },
+    {
+      "id": 25206911165842,
+      "value": "2025-07-31"
+    },
+    {
+      "id": 25261685515026,
+      "value": null
+    },
+    {
+      "id": 25418738293010,
+      "value": null
+    },
+    {
+      "id": 26002568548626,
+      "value": false
+    },
+    {
+      "id": 26888092455570,
+      "value": false
+    },
+    {
+      "id": 27030718581906,
+      "value": null
+    },
+    {
+      "id": 27763678120338,
+      "value": null
+    },
+    {
+      "id": 28040892666258,
+      "value": null
+    },
+    {
+      "id": 28128092825874,
+      "value": null
+    },
+    {
+      "id": 28198224272786,
+      "value": null
+    },
+    {
+      "id": 28212170772498,
+      "value": "production-_product_rmnf"
+    },
+    {
+      "id": 28293083464338,
+      "value": null
+    },
+    {
+      "id": 28524783553170,
+      "value": null
+    },
+    {
+      "id": 29012349718162,
+      "value": null
+    },
+    {
+      "id": 29306541241874,
+      "value": null
+    },
+    {
+      "id": 29306590245138,
+      "value": null
+    },
+    {
+      "id": 29306596071314,
+      "value": null
+    },
+    {
+      "id": 29306737207826,
+      "value": null
+    },
+    {
+      "id": 29306900252306,
+      "value": null
+    },
+    {
+      "id": 29306964133778,
+      "value": null
+    },
+    {
+      "id": 29358497448466,
+      "value": null
+    },
+    {
+      "id": 29945758849938,
+      "value": null
+    },
+    {
+      "id": 30033380645778,
+      "value": null
+    }
+  ],
+  "public_notes": [
+    {
+      "id": 25456477469586,
+      "author_id": 19501463008402,
+      "created_at": "2025-03-20T08:49:22Z",
+      "body": "Wrong product The board part is received in a different pattern",
+      "public": true,
+      "type": "public",
+      "attachments": [
+        {
+          "id": 25456462916882,
+          "file_name": "order_issue.png",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/cewBbfiOGgKAcQ8wGN39jzjqR/?name=order_issue.png",
+          "content_type": "image/png",
+          "size": 77647
+        },
+        {
+          "id": 25456477331090,
+          "file_name": "order_issue.png",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/SwZEFZQSY635Vwf4CIvSIsDRB/?name=order_issue.png",
+          "content_type": "image/png",
+          "size": 168209
+        },
+        {
+          "id": 25456492822674,
+          "file_name": "order_issue.png",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/rpMJLeBrnt2byMZ2Wr1zVUqcy/?name=order_issue.png",
+          "content_type": "image/png",
+          "size": 78913
+        }
+      ]
+    },
+    {
+      "id": 25457656918162,
+      "author_id": 12706838227218,
+      "created_at": "2025-03-20T09:28:30Z",
+      "body": "Hello Rajeev ,\n\nThank you for contacting Wooden Street Support.\n\nI am ​Bablesh and will be assisting you with ticket 376820.\nYour query is currently being analyzed, and I will aim to resolve it as earliest possible.\n\nThank you for your patience. Have a great day!\n\nThanks & Regards,\nBablesh\nWooden Street Support",
+      "public": true,
+      "type": "public",
+      "attachments": []
+    },
+    {
+      "id": 25504451744786,
+      "author_id": 12706838227218,
+      "created_at": "2025-03-22T09:00:59Z",
+      "body": "Hi Rajeev,\n\n🌟 **Hello from Wooden Street!** 🌟\n\nWe have received the validation proofs for the **Bed Footboard of your Amaris Poster Bed Without Storage (King Size, Teak Finish)**, indicating that the wrong part was delivered. The details have been shared with our production team for further assessment.\n\nOur team is reviewing the issue, and we will update you on the resolution at the earliest. We appreciate your patience and cooperation.\n\nNeed any help? We’re just a call away! 📞 Reach us at **+91-9314444747** (available every day from 9 AM to 8 PM).\n\nYou can also track your request or share any additional details here: **Check Status**.\n\nWe’re here to assist you! 😊\n\nBest regards,\nBablesh\n**Team Wooden Street**",
+      "public": true,
+      "type": "public",
+      "attachments": []
+    },
+    {
+      "id": 25530769788818,
+      "author_id": 12706838227218,
+      "created_at": "2025-03-24T05:43:19Z",
+      "body": "**Hi Rajeev,**\n\n**Hello from Wooden Street!**\n\nAs per the update received from our **production team**, we require the **exact dimensions** of the **footboard** for your **Amaris Poster Bed Without Storage (King Size, Teak Finish)** to proceed further.\n\nTo ensure accuracy, an **inspection request has been raised**, and our team will **visit your location** for measurement verification.\n\nWe appreciate your cooperation in this process and will keep you updated on the next steps.\n\nNeed any help? We’re just a call away! 📞 Reach us at **+91-9314444747** (available every day from 9 AM to 8 PM).\n\nYou can also track your request or share any additional details here: **Check Status**.\n\nLooking forward to assisting you further! 😊\n\nBest regards,\nBablesh\n**Team Wooden Street**",
+      "public": true,
+      "type": "public",
+      "attachments": []
+    },
+    {
+      "id": 25540833051666,
+      "author_id": 12706984659858,
+      "created_at": "2025-03-24T11:57:18Z",
+      "body": " ![woodenstreet](https://www.woodenstreet.com/image/data/logo/org.png)\nDear **Rajeev** ,\n\nGreetings of the Day!\n\nWe have scheduled carpentry service against you order id **849564**. Please find the other details related to it below:\n\n Service Type Issues Product Name Carpenter Name Carpenter visit Date\nCarpentry Local-Repair Bed Footboard Basith A 25 Mar,25\n\nThank You for being patient\n\nThis is an auto generated email. Do not reply on this email. Login to your account and communicate to our support team on \"Support Desk\". We will be happy to assist you.",
+      "public": true,
+      "type": "public",
+      "attachments": []
+    },
+    {
+      "id": 25571209612178,
+      "author_id": 12706838227218,
+      "created_at": "2025-03-25T13:39:31Z",
+      "body": "**Hi Rajeev,**\n\n**Hello from Wooden Street!**\n\nWe tried reaching you regarding the **Bed Footboard** of your **Amaris Poster Bed Without Storage (King Size, Teak Finish),** but were unable to connect.\n\nTo proceed with the resolution, we require your **consent for the remanufacturing of the part.** Kindly confirm at your earliest convenience so we can initiate the process.\n\nNeed any help? We’re just a call away! 📞 Reach us at **+91-9314444747** (available every day from 9 AM to 8 PM).\n\nYou can also track your request or share any additional details here: **Check Status**.\n\nLooking forward to your response.\n\nBest regards,\nBablesh\n**Team Wooden Street**",
+      "public": true,
+      "type": "public",
+      "attachments": []
+    },
+    {
+      "id": 25571560004754,
+      "author_id": 19554153642130,
+      "created_at": "2025-03-25T13:49:29Z",
+      "body": "Hi,\n\nI hereby give my consent.",
+      "public": true,
+      "type": "public",
+      "attachments": []
+    },
+    {
+      "id": 25778822179474,
+      "author_id": 12706838227218,
+      "created_at": "2025-04-03T07:35:02Z",
+      "body": "**Hi Rajeev,**\n\n**Hello from Wooden Street!**\n\nAs per the **consent received from your side**, we have initiated the **re-manufacturing of the Bed Footboard** for your **Amaris Poster Bed Without Storage (King Size, Teak Finish)** under **Order ID: 879760**.\n\nThe **production process will take approximately 3-4 weeks**, and the **estimated delivery date is April 28th**. Once the product reaches the local warehouse, our team will **schedule the delivery** and pick up the defective part at the same time.\n\nNeed any help? We’re just a call away! 📞 Reach us at **+91-9314444747** (available every day from 9 AM to 8 PM).\n\nYou can also track your request or share any additional details here: **Check Status**.\n\nWe appreciate your patience and will keep you updated on the progress! 😊\n\nBest regards,\n**Bablesh**\n**Team Wooden Street**",
+      "public": true,
+      "type": "public",
+      "attachments": []
+    },
+    {
+      "id": 27379823972242,
+      "author_id": 12706838227218,
+      "created_at": "2025-06-13T10:55:01Z",
+      "body": "**Hi Rajeev,**\n\n**Hello from Wooden Street!**\n\nApologies for the **design and finish-related issue** you experienced with your **Amaris Poster Bed Without Storage (King Size, Walnut Finish)**.\n\nWe’d like to inform you that a **remanufacturing request has been successfully initiated** under **Order ID 995254**. The process will take approximately **2–3 weeks** in production.\n\nOnce the remanufactured unit reaches your **local warehouse**, our team will coordinate with you to **schedule the delivery** and **pick up the old unit at the same time**, ensuring a smooth and hassle-free exchange.\n\nWe’re committed to resolving this promptly and ensuring your satisfaction!\n\n**Need any help? We’re just a call away! 📞** Reach us at **+91-9314444747** (available every day from 9 AM to 8 PM).\n\nYou can also track your request or share any additional details here: **Check Status**.\n\nBest regards,\nBablesh\n**Team Wooden Street**",
+      "public": true,
+      "type": "public",
+      "attachments": []
+    },
+    {
+      "id": 28459405015826,
+      "author_id": 12724167050130,
+      "created_at": "2025-07-31T14:06:54Z",
+      "body": "Dear Rajeev,\n\nGreetings from Wooden Street!\n\nThis email is regarding your order ID 995254 for the product Amaris Poster Bed Without Storage (King Size, Walnut Finish).\n\nWe tried reaching you on your registered number, but the call went unanswered, was busy, or not reachable. We kindly request you to share an alternate contact number so that we can connect with you.\n\nWe would also like to inform you that your order has been successfully delivered, and the support ticket associated with this order has been closed.\n\nIf you require any further assistance, please feel free to contact us at +91-9314444747 (available every day, 09:00–20:00).\n\nTo check the status of your ticket or to add comments, please visit:\n👉 https://www.woodenstreet.com/support-form\n\nWarm regards,\nVinay\nTeam Wooden Street",
+      "public": true,
+      "type": "public",
+      "attachments": []
+    }
+  ],
+  "private_notes": [
+    {
+      "id": 25518275191698,
+      "author_id": 24432743081106,
+      "created_at": "2025-03-23T08:07:24Z",
+      "body": "Add remfg for the wrong design footboard and send the carpenter to take the proper dimensions (especially the bed's upper dome part)  and add those dimensions in the ODF",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    },
+    {
+      "id": 25565301436690,
+      "author_id": 12706984659858,
+      "created_at": "2025-03-25T10:25:51Z",
+      "body": "Dimensions",
+      "public": false,
+      "type": "private",
+      "attachments": [
+        {
+          "id": 25565244549906,
+          "file_name": "WhatsApp Image 2025-03-25 at 3.46.56 PM.jpeg",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/426n1INaJTQjZRafBQZFJqQCl/?name=WhatsApp+Image+2025-03-25+at+3.46.56+PM.jpeg",
+          "content_type": "image/jpeg",
+          "size": 33844
+        },
+        {
+          "id": 25565244556434,
+          "file_name": "WhatsApp Image 2025-03-25 at 3.46.55 PM.jpeg",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/62GwxpPP4WwPxqQO5lWGMTZaZ/?name=WhatsApp+Image+2025-03-25+at+3.46.55+PM.jpeg",
+          "content_type": "image/jpeg",
+          "size": 38606
+        },
+        {
+          "id": 25565259936018,
+          "file_name": "WhatsApp Image 2025-03-25 at 3.46.55 PM (2).jpeg",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/ZIImM9kJoPMeVgqxMCdrwOlP7/?name=WhatsApp+Image+2025-03-25+at+3.46.55+PM+%282%29.jpeg",
+          "content_type": "image/jpeg",
+          "size": 35798
+        },
+        {
+          "id": 25565244566290,
+          "file_name": "WhatsApp Image 2025-03-25 at 3.48.00 PM (1).jpeg",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/eT1U4NUVgLQ5lf3ztm50ZSBOd/?name=WhatsApp+Image+2025-03-25+at+3.48.00+PM+%281%29.jpeg",
+          "content_type": "image/jpeg",
+          "size": 26548
+        },
+        {
+          "id": 25565244576018,
+          "file_name": "WhatsApp Image 2025-03-25 at 3.46.54 PM.jpeg",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/6RNUuqWT1qjW7jH8vo6Z31TQN/?name=WhatsApp+Image+2025-03-25+at+3.46.54+PM.jpeg",
+          "content_type": "image/jpeg",
+          "size": 41617
+        },
+        {
+          "id": 25565259952658,
+          "file_name": "WhatsApp Image 2025-03-25 at 3.46.55 PM (1).jpeg",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/yzLDZcbO7XNlGhq2uZUCKe1yu/?name=WhatsApp+Image+2025-03-25+at+3.46.55+PM+%281%29.jpeg",
+          "content_type": "image/jpeg",
+          "size": 51907
+        },
+        {
+          "id": 25565259966610,
+          "file_name": "WhatsApp Image 2025-03-25 at 3.46.53 PM.jpeg",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/5C5OwNRnRwKr7Fqi9bMem4s1E/?name=WhatsApp+Image+2025-03-25+at+3.46.53+PM.jpeg",
+          "content_type": "image/jpeg",
+          "size": 47355
+        },
+        {
+          "id": 25565259967634,
+          "file_name": "WhatsApp Image 2025-03-25 at 3.46.53 PM (2).jpeg",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/QxNFYNsBzs37si9O01OKAAYOO/?name=WhatsApp+Image+2025-03-25+at+3.46.53+PM+%282%29.jpeg",
+          "content_type": "image/jpeg",
+          "size": 43706
+        },
+        {
+          "id": 25565269901586,
+          "file_name": "WhatsApp Image 2025-03-25 at 3.46.54 PM (1).jpeg",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/BIwpC2mMla9ifuQzFXECvtvBv/?name=WhatsApp+Image+2025-03-25+at+3.46.54+PM+%281%29.jpeg",
+          "content_type": "image/jpeg",
+          "size": 39285
+        },
+        {
+          "id": 25565284243218,
+          "file_name": "WhatsApp Image 2025-03-25 at 3.48.00 PM.jpeg",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/bOo16VVzSS8Bz06TBllgFixTK/?name=WhatsApp+Image+2025-03-25+at+3.48.00+PM.jpeg",
+          "content_type": "image/jpeg",
+          "size": 24484
+        },
+        {
+          "id": 25565284247954,
+          "file_name": "WhatsApp Image 2025-03-25 at 3.46.56 PM (1).jpeg",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/OKcRSB0ZrF6t25sqtlXNALghL/?name=WhatsApp+Image+2025-03-25+at+3.46.56+PM+%281%29.jpeg",
+          "content_type": "image/jpeg",
+          "size": 84261
+        },
+        {
+          "id": 25565284248722,
+          "file_name": "WhatsApp Image 2025-03-25 at 3.48.00 PM (2).jpeg",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/sNpKPAToAEGtBFPvpM13kvvc7/?name=WhatsApp+Image+2025-03-25+at+3.48.00+PM+%282%29.jpeg",
+          "content_type": "image/jpeg",
+          "size": 27010
+        },
+        {
+          "id": 25565300187922,
+          "file_name": "WhatsApp Image 2025-03-25 at 3.46.53 PM (1).jpeg",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/I3PJ4E33rcDWKZ0bYqdp9PhFH/?name=WhatsApp+Image+2025-03-25+at+3.46.53+PM+%281%29.jpeg",
+          "content_type": "image/jpeg",
+          "size": 48645
+        }
+      ]
+    },
+    {
+      "id": 25678649109906,
+      "author_id": 12706838227218,
+      "created_at": "2025-03-30T10:07:50Z",
+      "body": "Returns Order 0060028883 has been saved\nRe-Manufacture 0000879760 has been saved.",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    },
+    {
+      "id": 25778794456978,
+      "author_id": 12706838227218,
+      "created_at": "2025-04-03T07:34:10Z",
+      "body": "**Partial Re-manufacturing of Bed Footboard**\nproduct name :- **Amaris Poster Bed Without Storage (King Size, Teak  Finish)**\nQty :- **1**\nOID:-  **849564**\nReturns Order:- **0060028883 **\nRe-Manufacture:- **0000879760 **\nReason:-  **Defective Issues **\nApproved By :- **Aviral Sir**\nSupport Person :- **Bablesh**",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    },
+    {
+      "id": 27245767336722,
+      "author_id": 12498597059730,
+      "created_at": "2025-06-07T08:23:46Z",
+      "body": "hi ji.. agaiin cx received a wrong finish so he returned the product // kindly reach out to the cx : By Mohana Priya R",
+      "public": false,
+      "type": "private",
+      "attachments": [
+        {
+          "id": 27245793569426,
+          "file_name": "order_issue.png",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/lnHTUa2J5BMp8jfHSlq2e3Vq8/?name=order_issue.png",
+          "content_type": "image/png",
+          "size": 268731
+        }
+      ]
+    },
+    {
+      "id": 27245767573266,
+      "author_id": 12498597059730,
+      "created_at": "2025-06-07T08:23:54Z",
+      "body": ". : By Mohana Priya R",
+      "public": false,
+      "type": "private",
+      "attachments": [
+        {
+          "id": 27245793801618,
+          "file_name": "order_issue.png",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/GA8yHLEOVllxwEHPRkAm76syU/?name=order_issue.png",
+          "content_type": "image/png",
+          "size": 297898
+        }
+      ]
+    },
+    {
+      "id": 27352976899602,
+      "author_id": 24432743081106,
+      "created_at": "2025-06-12T09:51:52Z",
+      "body": "Reverse the product at the local warehouse to rectify the issue",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    },
+    {
+      "id": 27357358538514,
+      "author_id": 12706838227218,
+      "created_at": "2025-06-12T12:28:10Z",
+      "body": "Footboard RMNF was added on 30th March and issue can not be rectified in warehouse because different part delivered again, Asking for the Complete Replacement",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    },
+    {
+      "id": 27357432237714,
+      "author_id": 24432743081106,
+      "created_at": "2025-06-12T12:31:59Z",
+      "body": "Call me on 9672364806",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    },
+    {
+      "id": 27378504186002,
+      "author_id": 12706838227218,
+      "created_at": "2025-06-13T10:03:20Z",
+      "body": "As discussed over the call with Vikram Sir, RMNF Approved",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    },
+    {
+      "id": 27378892135826,
+      "author_id": 12706838227218,
+      "created_at": "2025-06-13T10:16:02Z",
+      "body": "Customer was not contactable, Notified to Store Team about the Comoplate RMNF",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    },
+    {
+      "id": 27378999356178,
+      "author_id": 12706838227218,
+      "created_at": "2025-06-13T10:21:05Z",
+      "body": "Returns Order 0060032689 has been saved\nRe-Manufacture 0000995254 has been saved.",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    },
+    {
+      "id": 27379524927250,
+      "author_id": 12706838227218,
+      "created_at": "2025-06-13T10:43:11Z",
+      "body": " ![](https://wsteamsupport.zendesk.com/attachments/token/g0xUiR5VX67sC6YDHPCNIUQGq/?name=image.png)",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    },
+    {
+      "id": 27379547965970,
+      "author_id": 12706838227218,
+      "created_at": "2025-06-13T10:43:43Z",
+      "body": "Please Mark it Custom **QC Daksh**",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    },
+    {
+      "id": 27379800396562,
+      "author_id": 12706838227218,
+      "created_at": "2025-06-13T10:54:27Z",
+      "body": "Full Re-manufacturing of\nproduct name :- **Amaris Poster Bed Without Storage (King Size, Walnut Finish)**\nQty : **1**\nOID:- **644002**\nReturns Order:- **0060032689 **\nRe-Manufacture:- **0000995254 **\nReason:-  **Design Change Issues **\nApproved By :- **Vikram Sir **\nSupport Person :- **Bablesh **",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    },
+    {
+      "id": 27380539212050,
+      "author_id": 12724446123154,
+      "created_at": "2025-06-13T11:21:46Z",
+      "body": "Request #449619 \"Order Cancellation Request -879760\" was closed and merged into this request. Last comment in request #449619:\r\n\r\ncx received wrong product",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    },
+    {
+      "id": 27381246516626,
+      "author_id": 12498597059730,
+      "created_at": "2025-06-13T11:51:53Z",
+      "body": "Amaris Poster Bed Without Storage (King Size, Teak Finish).- its an Teak finish : By Dhanalakshmi B",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    },
+    {
+      "id": 28064584882578,
+      "author_id": 12724424161042,
+      "created_at": "2025-07-14T12:13:24Z",
+      "body": "Kindly contact the customer, as they have received the headboard but the finish is different from what was expected",
+      "public": false,
+      "type": "private",
+      "attachments": []
+    }
+  ],
+  "attachments": [
+    {
+      "id": 25456462916882,
+      "file_name": "order_issue.png",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/cewBbfiOGgKAcQ8wGN39jzjqR/?name=order_issue.png",
+      "content_type": "image/png",
+      "size": 77647
+    },
+    {
+      "id": 25456477331090,
+      "file_name": "order_issue.png",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/SwZEFZQSY635Vwf4CIvSIsDRB/?name=order_issue.png",
+      "content_type": "image/png",
+      "size": 168209
+    },
+    {
+      "id": 25456492822674,
+      "file_name": "order_issue.png",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/rpMJLeBrnt2byMZ2Wr1zVUqcy/?name=order_issue.png",
+      "content_type": "image/png",
+      "size": 78913
+    },
+    {
+      "id": 25565244549906,
+      "file_name": "WhatsApp Image 2025-03-25 at 3.46.56 PM.jpeg",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/426n1INaJTQjZRafBQZFJqQCl/?name=WhatsApp+Image+2025-03-25+at+3.46.56+PM.jpeg",
+      "content_type": "image/jpeg",
+      "size": 33844
+    },
+    {
+      "id": 25565244556434,
+      "file_name": "WhatsApp Image 2025-03-25 at 3.46.55 PM.jpeg",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/62GwxpPP4WwPxqQO5lWGMTZaZ/?name=WhatsApp+Image+2025-03-25+at+3.46.55+PM.jpeg",
+      "content_type": "image/jpeg",
+      "size": 38606
+    },
+    {
+      "id": 25565259936018,
+      "file_name": "WhatsApp Image 2025-03-25 at 3.46.55 PM (2).jpeg",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/ZIImM9kJoPMeVgqxMCdrwOlP7/?name=WhatsApp+Image+2025-03-25+at+3.46.55+PM+%282%29.jpeg",
+      "content_type": "image/jpeg",
+      "size": 35798
+    },
+    {
+      "id": 25565244566290,
+      "file_name": "WhatsApp Image 2025-03-25 at 3.48.00 PM (1).jpeg",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/eT1U4NUVgLQ5lf3ztm50ZSBOd/?name=WhatsApp+Image+2025-03-25+at+3.48.00+PM+%281%29.jpeg",
+      "content_type": "image/jpeg",
+      "size": 26548
+    },
+    {
+      "id": 25565244576018,
+      "file_name": "WhatsApp Image 2025-03-25 at 3.46.54 PM.jpeg",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/6RNUuqWT1qjW7jH8vo6Z31TQN/?name=WhatsApp+Image+2025-03-25+at+3.46.54+PM.jpeg",
+      "content_type": "image/jpeg",
+      "size": 41617
+    },
+    {
+      "id": 25565259952658,
+      "file_name": "WhatsApp Image 2025-03-25 at 3.46.55 PM (1).jpeg",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/yzLDZcbO7XNlGhq2uZUCKe1yu/?name=WhatsApp+Image+2025-03-25+at+3.46.55+PM+%281%29.jpeg",
+      "content_type": "image/jpeg",
+      "size": 51907
+    },
+    {
+      "id": 25565259966610,
+      "file_name": "WhatsApp Image 2025-03-25 at 3.46.53 PM.jpeg",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/5C5OwNRnRwKr7Fqi9bMem4s1E/?name=WhatsApp+Image+2025-03-25+at+3.46.53+PM.jpeg",
+      "content_type": "image/jpeg",
+      "size": 47355
+    },
+    {
+      "id": 25565259967634,
+      "file_name": "WhatsApp Image 2025-03-25 at 3.46.53 PM (2).jpeg",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/QxNFYNsBzs37si9O01OKAAYOO/?name=WhatsApp+Image+2025-03-25+at+3.46.53+PM+%282%29.jpeg",
+      "content_type": "image/jpeg",
+      "size": 43706
+    },
+    {
+      "id": 25565269901586,
+      "file_name": "WhatsApp Image 2025-03-25 at 3.46.54 PM (1).jpeg",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/BIwpC2mMla9ifuQzFXECvtvBv/?name=WhatsApp+Image+2025-03-25+at+3.46.54+PM+%281%29.jpeg",
+      "content_type": "image/jpeg",
+      "size": 39285
+    },
+    {
+      "id": 25565284243218,
+      "file_name": "WhatsApp Image 2025-03-25 at 3.48.00 PM.jpeg",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/bOo16VVzSS8Bz06TBllgFixTK/?name=WhatsApp+Image+2025-03-25+at+3.48.00+PM.jpeg",
+      "content_type": "image/jpeg",
+      "size": 24484
+    },
+    {
+      "id": 25565284247954,
+      "file_name": "WhatsApp Image 2025-03-25 at 3.46.56 PM (1).jpeg",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/OKcRSB0ZrF6t25sqtlXNALghL/?name=WhatsApp+Image+2025-03-25+at+3.46.56+PM+%281%29.jpeg",
+      "content_type": "image/jpeg",
+      "size": 84261
+    },
+    {
+      "id": 25565284248722,
+      "file_name": "WhatsApp Image 2025-03-25 at 3.48.00 PM (2).jpeg",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/sNpKPAToAEGtBFPvpM13kvvc7/?name=WhatsApp+Image+2025-03-25+at+3.48.00+PM+%282%29.jpeg",
+      "content_type": "image/jpeg",
+      "size": 27010
+    },
+    {
+      "id": 25565300187922,
+      "file_name": "WhatsApp Image 2025-03-25 at 3.46.53 PM (1).jpeg",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/I3PJ4E33rcDWKZ0bYqdp9PhFH/?name=WhatsApp+Image+2025-03-25+at+3.46.53+PM+%281%29.jpeg",
+      "content_type": "image/jpeg",
+      "size": 48645
+    },
+    {
+      "id": 27245793569426,
+      "file_name": "order_issue.png",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/lnHTUa2J5BMp8jfHSlq2e3Vq8/?name=order_issue.png",
+      "content_type": "image/png",
+      "size": 268731
+    },
+    {
+      "id": 27245793801618,
+      "file_name": "order_issue.png",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/GA8yHLEOVllxwEHPRkAm76syU/?name=order_issue.png",
+      "content_type": "image/png",
+      "size": 297898
+    }
+  ]
+}

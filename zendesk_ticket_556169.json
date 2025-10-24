@@ -1,0 +1,233 @@
+{
+  "id": 556169,
+  "subject": "Testing by sonu",
+  "description": "Teststtststst",
+  "status": "open",
+  "priority": "normal",
+  "requester_id": 30474317723794,
+  "assignee_id": 29788863045266,
+  "created_at": "2025-10-23T12:13:11Z",
+  "updated_at": "2025-10-23T12:13:13Z",
+  "tags": [
+    "defective_product_delivered__report_within_72_hours_",
+    "details_updated",
+    "joints_open",
+    "order_delay_-_warehouse",
+    "severity_1"
+  ],
+  "custom_fields": [
+    {
+      "id": 12686819265426,
+      "value": "995254"
+    },
+    {
+      "id": 12686879277074,
+      "value": "Defective Product Delivered (Report Within 72 Hours)"
+    },
+    {
+      "id": 13803217889682,
+      "value": "Joints open"
+    },
+    {
+      "id": 12686841173906,
+      "value": "details_updated"
+    },
+    {
+      "id": 13559105483794,
+      "value": false
+    },
+    {
+      "id": 23533808269842,
+      "value": false
+    },
+    {
+      "id": 23265659981586,
+      "value": null
+    },
+    {
+      "id": 23265599320338,
+      "value": null
+    },
+    {
+      "id": 23265481386770,
+      "value": null
+    },
+    {
+      "id": 23237595589650,
+      "value": "severity_1"
+    },
+    {
+      "id": 19047831723666,
+      "value": null
+    },
+    {
+      "id": 19047585225618,
+      "value": false
+    },
+    {
+      "id": 18918118338834,
+      "value": null
+    },
+    {
+      "id": 18917817920402,
+      "value": null
+    },
+    {
+      "id": 13985595254034,
+      "value": null
+    },
+    {
+      "id": 13980496573714,
+      "value": null
+    },
+    {
+      "id": 13925506797586,
+      "value": null
+    },
+    {
+      "id": 13925394241682,
+      "value": null
+    },
+    {
+      "id": 24272962341650,
+      "value": null
+    },
+    {
+      "id": 24272947047314,
+      "value": null
+    },
+    {
+      "id": 13925406160402,
+      "value": null
+    },
+    {
+      "id": 24436124796050,
+      "value": "Lorraine Dressing Table (Flowery Wenge Finish)"
+    },
+    {
+      "id": 25028629741970,
+      "value": null
+    },
+    {
+      "id": 25206911165842,
+      "value": null
+    },
+    {
+      "id": 25261685515026,
+      "value": null
+    },
+    {
+      "id": 25418738293010,
+      "value": null
+    },
+    {
+      "id": 26002568548626,
+      "value": false
+    },
+    {
+      "id": 26888092455570,
+      "value": false
+    },
+    {
+      "id": 27030718581906,
+      "value": null
+    },
+    {
+      "id": 27763678120338,
+      "value": null
+    },
+    {
+      "id": 28040892666258,
+      "value": null
+    },
+    {
+      "id": 28128092825874,
+      "value": null
+    },
+    {
+      "id": 28198224272786,
+      "value": null
+    },
+    {
+      "id": 28212170772498,
+      "value": "order_delay_-_warehouse"
+    },
+    {
+      "id": 28293083464338,
+      "value": null
+    },
+    {
+      "id": 28524783553170,
+      "value": null
+    },
+    {
+      "id": 29012349718162,
+      "value": null
+    },
+    {
+      "id": 29306541241874,
+      "value": null
+    },
+    {
+      "id": 29306590245138,
+      "value": null
+    },
+    {
+      "id": 29306596071314,
+      "value": null
+    },
+    {
+      "id": 29306737207826,
+      "value": null
+    },
+    {
+      "id": 29306900252306,
+      "value": null
+    },
+    {
+      "id": 29306964133778,
+      "value": null
+    },
+    {
+      "id": 29358497448466,
+      "value": null
+    },
+    {
+      "id": 29945758849938,
+      "value": "2025-10-23"
+    },
+    {
+      "id": 30033380645778,
+      "value": "2025-10-23"
+    }
+  ],
+  "public_notes": [
+    {
+      "id": 30474394519698,
+      "author_id": 12498597059730,
+      "created_at": "2025-10-23T12:13:11Z",
+      "body": "Teststtststst",
+      "public": true,
+      "type": "public",
+      "attachments": [
+        {
+          "id": 30474358864274,
+          "file_name": "exp-banner_360.jpg",
+          "content_url": "https://wsteamsupport.zendesk.com/attachments/token/aP2Cok4qMO8E4cnWALCjxf8Vw/?name=exp-banner_360.jpg",
+          "content_type": "image/jpeg",
+          "size": 78119
+        }
+      ]
+    }
+  ],
+  "private_notes": [],
+  "attachments": [
+    {
+      "id": 30474358864274,
+      "file_name": "exp-banner_360.jpg",
+      "content_url": "https://wsteamsupport.zendesk.com/attachments/token/aP2Cok4qMO8E4cnWALCjxf8Vw/?name=exp-banner_360.jpg",
+      "content_type": "image/jpeg",
+      "size": 78119
+    }
+  ]
+}
