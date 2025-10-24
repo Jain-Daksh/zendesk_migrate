@@ -1,61 +1,3 @@
-// const axios = require("axios")
-// const fs = require('fs')
-// const ZENDESK_DOMAIN = "https://wsteamsupport.zendesk.com/api/v2/";
-// const ZENDESK_EMAIL = "admin@woodenstreet.com";
-// const ZENDESK_TOKEN = "QjtXjbwkXsk6mccLI1LYoATAuHP86ygP9nRAMjxr";
-
-// async function fetchZendeskUsers(pageUrl = `${ZENDESK_DOMAIN}/users.json`) {
-//   const res = await axios.get(pageUrl, {
-//     auth: { username: `${ZENDESK_EMAIL}/token`, password: ZENDESK_TOKEN },
-//   });
-
-//   const users = res.data.users;
-//   if (res.data.next_page) {
-//     const next = await fetchZendeskUsers(res.data.next_page);
-//     return [...users, ...next];
-//   }
-//   return users;
-// }
-
-// async function fetchZendeskOrganizations(pageUrl = `${ZENDESK_DOMAIN}/api/v2/organizations.json`) {
-//   const res = await axios.get(pageUrl, {
-//     auth: { username: `${ZENDESK_EMAIL}/token`, password: ZENDESK_TOKEN },
-//   });
-
-//   const orgs = res.data.organizations;
-//   if (res.data.next_page) {
-//     const next = await fetchZendeskOrganizations(res.data.next_page);
-//     return [...orgs, ...next];
-//   }
-//   return orgs;
-// }
-
-// function getRandomContacts(users, count = 20) {
-//   const shuffled = users.sort(() => 0.5 - Math.random());
-//   return shuffled.slice(0, count);
-// }
-
-// async function fetchAndVerify() {
-//   console.log("⏳ Fetching Zendesk organizations...");
-//   // const orgs = await fetchZendeskOrganizations();
-//   // console.log(`Found ${orgs.length} organizations.`);
-
-//   console.log("⏳ Fetching Zendesk users...");
-//   const users = await fetchZendeskUsers();
-//   console.log(`Found ${users.length} users.`);
-
-//   // Get 20 random users for verification
-//   const randomContacts = getRandomContacts(users, 20);
-
-//   fs.writeFileSync("zendesk_users_backup.json", JSON.stringify(users, null, 2));
-
-//   console.log("📝 Sample of 20 random contacts to verify data: ");
-//   // console.log(JSON.stringify(randomContacts, null, 2));
-
-//   console.log("✅ All done! Please verify the sample data.");
-// }
-
-// fetchAndVerify();
 const axios = require('axios');
 const fs = require('fs');
 
@@ -159,17 +101,17 @@ async function fetchTicketComments(ticketId) {
   return res.data.comments;
 }
 
-// Fetch attachments for a specific comment
-async function fetchAttachmentsForComment(ticketId, commentId) {
-  const res = await axios.get(
-    `${ZENDESK_DOMAIN}/tickets/${ticketId}/comments/${commentId}/attachments.json`,
-    {
-      auth: { username: `${ZENDESK_EMAIL}/token`, password: ZENDESK_TOKEN },
-    }
-  );
+// // Fetch attachments for a specific comment
+// async function fetchAttachmentsForComment(ticketId, commentId) {
+//   const res = await axios.get(
+//     `${ZENDESK_DOMAIN}/tickets/${ticketId}/comments/${commentId}/attachments.json`,
+//     {
+//       auth: { username: `${ZENDESK_EMAIL}/token`, password: ZENDESK_TOKEN },
+//     }
+//   );
 
-  return res.data.attachments;
-}
+//   return res.data.attachments;
+// }
 
 // Function to fetch ticket data, including comments and attachments
 async function fetchTicketsWithConversationsAndAttachments() {
@@ -228,27 +170,27 @@ async function fetchTicketsWithConversationsAndAttachments() {
 
 fetchTicketsWithConversationsAndAttachments();
 
-async function fetchZendeskAgents() {
-  let agents = [];
-  let pageUrl = `${ZENDESK_DOMAIN}/users.json`;
-  let nextPage;
+// async function fetchZendeskAgents() {
+//   let agents = [];
+//   let pageUrl = `${ZENDESK_DOMAIN}/users.json`;
+//   let nextPage;
 
-  do {
-    console.log('⏳ Fetching users...');
-    const { users, nextPage: next } = await fetchZendeskUsers(pageUrl);
-    nextPage = next;
+//   do {
+//     console.log('⏳ Fetching users...');
+//     const { users, nextPage: next } = await fetchZendeskUsers(pageUrl);
+//     nextPage = next;
 
-    // Filter agents from the list of users
-    const pageAgents = users.filter((user) => user.role === 'agent');
-    agents = [...agents, ...pageAgents];
+//     // Filter agents from the list of users
+//     const pageAgents = users.filter((user) => user.role === 'agent');
+//     agents = [...agents, ...pageAgents];
 
-    pageUrl = nextPage; // Update the URL for the next page, if any
-  } while (nextPage);
+//     pageUrl = nextPage; // Update the URL for the next page, if any
+//   } while (nextPage);
 
-  // Save the agent data into a JSON file
-  fs.writeFileSync('zendesk_agents.json', JSON.stringify(agents, null, 2));
-  console.log(`✅ Saved ${agents.length} agents.`);
-}
-fetchZendeskAgents();
+//   // Save the agent data into a JSON file
+//   fs.writeFileSync('zendesk_agents.json', JSON.stringify(agents, null, 2));
+//   console.log(`✅ Saved ${agents.length} agents.`);
+// }
+// fetchZendeskAgents();
 
-console.log('✅ All done!');
+// console.log('✅ All done!');
