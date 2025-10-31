@@ -1,160 +1,177 @@
-const axios = require('axios');
-const fs = require('fs');
-// import got from 'got';
-const got = require('got');
+const axios = require("axios");
+const fs = require("fs");
+const db = require("./db");
+const path = require("path");
+const os = require("os");
 
-const ZENDESK_DOMAIN = 'https://wsteamsupport.zendesk.com/api/v2/';
-const ZENDESK_EMAIL = 'admin@woodenstreet.com';
-const ZENDESK_TOKEN = 'QjtXjbwkXsk6mccLI1LYoATAuHP86ygP9nRAMjxr';
+// 🔐 ENVIRONMENT CONFIG
+const ZENDESK_DOMAIN = "https://wsteamsupport.zendesk.com/api/v2";
+const ZENDESK_EMAIL = "admin@woodenstreet.com";
+const ZENDESK_TOKEN = "QjtXjbwkXsk6mccLI1LYoATAuHP86ygP9nRAMjxr";
 
-const FRESHDESK_DOMAIN = 'woodenstreet891328299873.freshdesk.com';
-const FRESHDESK_API_KEY = 'QrLHtXvwWp019684SZG';
+const FRESHDESK_DOMAIN = "woodenstreet891328299873.freshdesk.com";
+const FRESHDESK_API_KEY = "QrLHtXvwWp019684SZG";
 
-// ---------------------------
-// Fetch all Zendesk users (contacts/customers)
-// ---------------------------
-async function fetchZendeskUsers(pageUrl = `${ZENDESK_DOMAIN}/users.json`) {
-  const res = await axios.get(`${ZENDESK_DOMAIN}/users.json`, {
-    auth: { username: `${ZENDESK_EMAIL}/token`, password: ZENDESK_TOKEN },
-    params: {
-      per_page: 1, // Limit to 1 user
-      page: 1, // Fetch the first page
-    },
-  });
-  console.log('res', res.data.count);
+// ⚙️ Rate Limiting for Zendesk
+const ZENDESK_RATE_LIMIT = 700;
+const ZENDESK_INTERVAL = 60000 / ZENDESK_RATE_LIMIT;
+let lastZendeskRequest = 0;
 
-  return res.data.users[0];
-  if (res.data.next_page) {
-    const next = await fetchZendeskUsers(res.data.next_page);
-    return [...users, ...next];
-  }
-  return users;
-}
+// 🧠 Helper - Respect Zendesk Rate Limits
+async function zendeskRequest(config) {
+  const now = Date.now();
+  const waitTime = Math.max(0, ZENDESK_INTERVAL - (now - lastZendeskRequest));
+  if (waitTime > 0) await new Promise((res) => setTimeout(res, waitTime));
+  lastZendeskRequest = Date.now();
 
-// ---------------------------
-// Fetch all Zendesk organizations
-// ---------------------------
-async function fetchZendeskOrganizations(
-  pageUrl = `${ZENDESK_DOMAIN}/organizations.json`
-) {
-  const res = await axios.get(pageUrl, {
-    auth: { username: `${ZENDESK_EMAIL}/token`, password: ZENDESK_TOKEN },
-  });
-
-  const orgs = res.data.organizations;
-  if (res.data.next_page) {
-    const next = await fetchZendeskOrganizations(res.data.next_page);
-    return [...orgs, ...next];
-  }
-  return orgs;
-}
-
-// ---------------------------
-// Create company in Freshdesk
-// ---------------------------
-async function createFreshdeskCompany(org) {
   try {
-    const data = {
-      name: org.name || 'Unnamed Organization',
-      description: org.details || '',
-    };
-    const res = await axios.post(
-      `https://woodenstreet891328299873.freshdesk.com/api/v2/companies`,
-      data,
-      {
-        auth: { username: FRESHDESK_API_KEY, password: 'X' },
-      }
-    );
-    console.log(`🏢 Created company: ${res.data.name} (${res.data.id})`);
-    return res.data.id;
-  } catch (err) {
-    if (err.response?.status === 409) {
-      console.log(`⚠️ Company already exists: ${org.name}`);
-      return null;
+    return await axios(config);
+  } catch (error) {
+    if (error.response?.status === 429) {
+      const retryAfter =
+        parseInt(error.response.headers["retry-after"]) * 1000 || 5000;
+      console.warn(
+        `⚠️ Rate limited by Zendesk. Retrying after ${retryAfter / 1000}s...`
+      );
+      await new Promise((res) => setTimeout(res, retryAfter));
+      return zendeskRequest(config);
     }
+    throw error;
+  }
+}
+
+// 🔹 Get Zendesk Requester Details
+async function getRequesterDetails(userId) {
+  try {
+    const res = await zendeskRequest({
+      method: "get",
+      url: `${ZENDESK_DOMAIN}/users/${userId}.json`,
+      auth: { username: `${ZENDESK_EMAIL}/token`, password: ZENDESK_TOKEN },
+    });
+    return res.data.user;
+  } catch (error) {
     console.error(
-      `❌ Failed to create company ${org.name}:`,
-      err,
-      err.response?.data || err.message
+      "Error fetching requester:",
+      error.response?.data || error.message
     );
     return null;
   }
 }
 
-async function createFreshdeskContact(user, orgMap) {
-  console.log('users', user);
-  try {
-    const customFields = {
-      zendesk_id: String(user.id), // Custom field for zendesk_id
-    };
+// 🔹 Create Freshdesk Contact
+const createContact = async (user) => {
+  const customFields = { zendesk_id: String(user.id) };
+  const data = {
+    name: user.name || "Unnamed Contact",
+    email: user.email || `user${user.id}@example.com`,
+    phone: user.phone || user.shared_phone_number || undefined,
+    custom_fields: customFields,
+    tags: user.tags || [],
+    active: true,
+    view_all_tickets: false,
+  };
 
-    const data = {
-      name: user.name || 'Unnamed Contact',
-      email: user.email || `user${user.id}@example.com`,
-      phone: (user.phone ?? user.shared_phone_number) || undefined,
-      // company_id: user.organization_id
-      //   ? orgMap[user.organization_id]
-      //   : undefined,
-      custom_fields: customFields,
-      tags: user.tags || [],
-      active: true,
-      view_all_tickets: false,
-    };
-    console.log('data', data);
+  try {
     const res = await axios.post(
       `https://${FRESHDESK_DOMAIN}/api/v2/contacts`,
       data,
       {
-        auth: { username: FRESHDESK_API_KEY, password: 'X' },
+        auth: { username: FRESHDESK_API_KEY, password: "X" },
       }
     );
 
-    console.log(`👤 Created contact: ${res.data.name} (${res.data.id})`);
-  } catch (err) {
-    if (err.response?.status === 409) {
-      console.log(`⚠️ Contact already exists: ${user.email}`);
-      return;
-    }
-    console.error(
-      `❌ Failed contact ${user.email}:`,
-      err.response?.data || err.message
+    const uid = res.data.id;
+    await db.query(
+      "INSERT INTO contact_zendesk_freshdesk (zendesk_id, freshdesk_id) VALUES (?, ?)",
+      [user.id, uid]
     );
+
+    console.log(`✅ New contact created for Zendesk ID ${user.id}: ${uid}`);
+    return uid;
+  } catch (err) {
+    if (err.response && err.response.status === 409) {
+      const existingId =
+        err.response.data?.errors?.[0]?.additional_info?.user_id;
+      console.log(`⚠️ Contact already exists (UID: ${existingId})`);
+      return existingId;
+    } else {
+      console.error("❌ Error creating contact:", err.message);
+      throw err;
+    }
+  }
+};
+
+// 🔹 Fetch tickets from local JSON files and process requesters
+async function fetchAllTickets() {
+  const downloadsDir = path.join(__dirname, "downloads");
+
+  // Read all files matching tickets_batch_3xxxxx.json
+  const allFiles = fs
+    .readdirSync(downloadsDir)
+    .filter((f) => /^tickets_batch_3\d{5,}\.json$/.test(f))
+    .sort((a, b) => parseInt(a.match(/\d+/)[0]) - parseInt(b.match(/\d+/)[0]));
+
+  console.log(`📂 Found ${allFiles.length} files to process`);
+
+  for (const fileName of allFiles) {
+    const filePath = path.join(downloadsDir, fileName);
+    console.log(`\n📄 Processing file: ${fileName}`);
+
+    const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    const tickets = data.tickets || data.results || data.rows || data || [];
+
+    console.log(`Found ${tickets.length} tickets in ${fileName}`);
+
+    // Process each ticket’s requester
+    for (const ticket of tickets) {
+      const zendeskId = ticket.requester_id;
+      if (!zendeskId) continue;
+
+      // Check if user already exists in mapping DB
+      const [existing] = await db.query(
+        "SELECT * FROM contact_zendesk_freshdesk WHERE zendesk_id = ?",
+        [zendeskId]
+      );
+
+      if (existing.length > 0) {
+        console.log(`⏩ Skip - Zendesk ID ${zendeskId} already mapped`);
+        continue;
+      }
+
+      console.log(`🔍 Fetching requester ${zendeskId} from Zendesk...`);
+      const user = await getRequesterDetails(zendeskId);
+      if (!user) {
+        console.warn(`⚠️ Skipping Zendesk ID ${zendeskId} - not found`);
+        continue;
+      }
+
+      // Create in Freshdesk
+      await createContact(user);
+    }
+
+    // Log progress after each file
+    fs.writeFileSync("progress2024.txt", `Completed file: ${fileName}`);
+    fs.appendFileSync(
+      "progress_log2024.txt",
+      `✅ Completed: ${fileName}${os.EOL}`
+    );
+
+    console.log(`✅ Finished file: ${fileName}`);
+  }
+
+  console.log("🎉 All files processed successfully!");
+}
+
+// 🔹 Main Runner
+async function main() {
+  try {
+    await fetchAllTickets();
+    console.log("✅ Script complete.");
+    setTimeout(() => process.exit(0), 3000);
+  } catch (err) {
+    console.error("💥 Script crashed:", err.message);
+    process.exit(1);
   }
 }
 
-// ---------------------------
-// MAIN FLOW
-// ---------------------------
-// async function migrateContacts() {
-//   console.log('⏳ Fetching Zendesk users...');
-//   const users = await fetchZendeskUsers();
-//   console.log(`Found ${users.length} users.`);
-
-//   // fs.writeFileSync("zendesk_users_backup.json", JSON.stringify(users, null, 2));
-
-//   console.log('🚀 Creating contacts in Freshdesk...');
-//   for (const user of users) {
-//     // if (user.role === 'end-user') {
-//       await createFreshdeskContact(user, orgMap);
-//     // }
-//   }
-
-//   console.log('✅ Contact migration completed!');
-// }
-
-// migrateContacts();
-
-async function migrateOneContact() {
-  const user = await fetchZendeskUsers();
-
-  console.log('fetched user', user);
-  const testUser = user;
-  console.log('🧐 Testing with the user: ', testUser);
-
-  console.log('🚀 Creating contact in Freshdesk for testing...');
-  await createFreshdeskContact(testUser);
-
-  console.log('✅ Test contact migration completed!');
-}
-
-migrateOneContact();
+main();
